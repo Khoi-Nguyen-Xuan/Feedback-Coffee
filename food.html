@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title></title>
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="icon" type="image/x-icon" href="https://previews.123rf.com/images/fokaspokas/fokaspokas1803/fokaspokas180300007/96756525-cup-of-hot-coffee-icon-on-transparent-background-.jpg">
+   <style>
+
+      #Sofia {
+          font-family: "Sofia", sans-serif;
+          font-size: 70px;
+         text-shadow: 3px 3px 3px #ababab;
+         }
+
+
+      *{
+
+         margin: 0;
+      }
+
+       body{
+          -webkit-animation:slide-down .6s ease-out;
+          -moz-animation:slide-down .6s ease-out;
+          -webkit-animation:slide-down .6s ease-in;
+          -moz-animation:slide-down .6s ease-in;
+          height:4000px; 
+      }
+
+
+
+
+      @-webkit-keyframes slide-down
+      {
+
+        0% {opacity: 0;}
+        20% { opacity:1; }
+
+      }
+
+
+
+      .wrapper {
+
+
+         background-color: lemonchiffon;
+         width: 100%;
+         height: 4000px;
+      }
+
+
+      ul {
+         list-style-type: none;
+          margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+             position: sticky;
+
+             
+         }
+
+      li {
+        float: left;
+        width:25%;
+      }
+   
+      li a, .dropbtn {
+         display: inline-block;
+         color: white;
+         text-align: center;
+          padding: 25px 50%;
+          text-decoration: none;
+          font-size: 20px;
+
+         }
+
+
+      li a:hover, .dropdown:hover .dropbtn {
+      background-color: #111;
+         }  
+
+      
+
+      li.dropdown {
+           display: inline-block;
+         }
+
+         .dropdowncontentHome {
+             display: none;
+             position: fixed;
+             background-color: white;
+             min-width: 25%;
+             box-shadow: 0px 8px 16px 0px r6(0,0,0,0.2);
+          
+            }
+
+
+          .dropdowncontentHome a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+             z-index: 1;
+            text-align: center ;
+            }
+
+            .dropdowncontentNews {
+             display: none;
+             position: fixed;
+             background-color: white;
+             min-width: 25%;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          
+            }
+
+
+          .dropdowncontentNews a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+             z-index: 1;
+            text-align: center ;
+            }
+
+             .dropdowncontentContact {
+             display: none;
+             position: fixed;
+             background-color: white;
+             min-width: 25%;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          
+            }
+
+
+          .dropdowncontentContact a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+             z-index: 1;
+            text-align: center ;
+            }
+
+            .dropdowncontentFeedback {
+             display: none;
+             position: fixed;
+             background-color: white;
+             min-width: 25%;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          
+            }
+
+
+          .dropdowncontentFeedback a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+             z-index: 1;
+            text-align: center ;
+            }
+
+         .dropdowncontentHome a:hover {background-color: lightgray;}
+         .dropdowncontentFeedback a:hover {background-color: lightgray;}
+         .dropdowncontentNews a:hover {background-color: lightgray;}
+         .dropdowncontentContact a:hover {background-color: lightgray;}
+
+
+         .dropdown:hover .dropdowncontentHome {
+          display: block;
+            }
+         .dropdown:hover .dropdowncontentFeedback {
+          display: block;
+            }
+
+         .dropdown:hover .dropdowncontentNews {
+          display: block;
+            }
+
+         .dropdown:hover .dropdowncontentContact {
+          display: block;
+            }
+
+
+
+            div.gallery {
+    
+    margin:4%;
+    margin-bottom:2%;
+    justify-content: center; 
+    border: 1px solid #ccc;
+     display :inline-block;
+     border-radius:5px;
+
+
+  
+    width: 25%;
+}
+
+
+      div.gallery:hover {
+
+        border-width:2x;
+        border-color:black;
+      
+}
+
+
+div.gallery img {
+   width: 100%;
+   height: 250px;
+   display :inline-block;
+   flex-wrap:wrap;
+  flex-direction: row;
+  border-radius:5px;
+
+}
+
+
+div.desc {
+  padding: 20px;
+  text-align: center;
+  background-color:white;
+  font-size: 20px;
+  border-radius:5px;
+}
+
+
+
+
+   </style>
+</head>
+
+
+
+
+<body>
+
+
+   <ul>
+
+         <li class ="dropdown">
+            <a class="dropbtn"  style ="background-color: #333;"  href="index.html">Home</a>
+
+            <div class="dropdowncontentHome">
+                 <a href="#">About us</a>
+                 <a href="#">Our services</a>
+                 <a href="#">Our customers</a>
+                 <a href="#">Location</a>
+         
+          </div>
+          </li>
+
+         <li class ="dropdown">
+            <a class="dropbtn"  style ="background-color: #333;"  href="menu.html">Menu</a>
+
+            <div class="dropdowncontentNews">
+                 <a href="drinks.html">Drinks</a>
+                 <a href="food.html">Food</a> 
+                
+
+         
+          </div>
+          </li>
+
+         <li class ="dropdown">
+            <a class="dropbtn"  style ="background-color: #333;"  href="contact.html">Contact</a>
+
+            <div class="dropdowncontentContact">
+                 <a href="#">Social media</a>
+                 <a href="#">Hotline</a>
+                 <a href="#">Email</a>
+                 <a href="#">Fax</a>
+         
+          </div>
+          </li>
+
+
+         <li class ="dropdown">
+            <a class="dropbtn"  style ="background-color: #333;"  href="feedback.html">Feedback</a>
+
+           
+          </li>
+
+
+
+   <div id ="#menu" class ="wrapper">
+    <br>
+<Br> 
+<br> <Br> 
+<br> 
+
+      <h1 id ="Sofia" style ="text-align: center;">Food</h1>
+        <p style ="text-align: center; font-size: 25px;"><i>Let food be thy medicine and medicine be thy food</i></p>
+
+     
+      <br>
+
+
+
+       <div class="gallery">
+  <a target="_blank" href="https://global-uploads.webflow.com/60af8c708c6f35480d067652/61c7f86d6ed8552af89fe57d_Veggie-mania.jpg">
+    <img src="https://global-uploads.webflow.com/60af8c708c6f35480d067652/61c7f86d6ed8552af89fe57d_Veggie-mania.jpg" alt="Espresso" width = "600" height="400">
+  </a>
+  <div class="desc">Pizza</div>
+
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://cdn.tgdd.vn/2021/04/CookProduct/1200-1200x676-87.jpg">
+    <img src="https://cdn.tgdd.vn/2021/04/CookProduct/1200-1200x676-87.jpg" alt="Forest">
+  </a>
+  <div class="desc">Hamburger</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://cdn.tgdd.vn/Files/2019/04/15/1160777/cach-lam-mi-spaghetti-sot-bo-bam-trong-3-phut-voi-panzani-202203031421227202.jpg">
+    <img src="https://cdn.tgdd.vn/Files/2019/04/15/1160777/cach-lam-mi-spaghetti-sot-bo-bam-trong-3-phut-voi-panzani-202203031421227202.jpg" alt="Northern Lights" >
+  </a>
+  <div class="desc">Spaghetti</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="https://static.tuoitre.vn/tto/i/s626/2014/10/27/7o2pqXbX.jpg">
+    <img src="https://static.tuoitre.vn/tto/i/s626/2014/10/27/7o2pqXbX.jpg" width="600" height="400">
+  </a>
+  <div class="desc">Pasta</div>
+</div>
+
+
+
+
+<div class="gallery">
+  <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/8/83/French_Fries.JPG">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/French_Fries.JPG" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">French Fries </div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="https://cdn.tgdd.vn/Files/2022/01/24/1412588/salad-la-gi-15-mon-salad-dinh-duong-cho-bua-com-gia-dinh-202201241950443123.jpg">
+    <img src="https://cdn.tgdd.vn/Files/2022/01/24/1412588/salad-la-gi-15-mon-salad-dinh-duong-cho-bua-com-gia-dinh-202201241950443123.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Salad</div>
+</div>
+
+
+<div class="gallery"  style ="margin-left:320px;">
+  <a target="_blank" href="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190319-ham-and-cheese-416-1553791878.jpg
+">
+    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190319-ham-and-cheese-416-1553791878.jpg
+" width="600" height="400">
+  </a>
+  <div class="desc">Ham&cheese</div>
+
+</div>
+
+
+
+<div class="gallery" style ="float:center">
+  <a target="_blank" href="https://www.thespruceeats.com/thmb/uY4K5GmJDTdV1-TigEuuiV5IZlQ=/2667x2000/smart/filters:no_upscale()/scrambled-eggs-with-bacon-482587-Hero_01-05be09870a6a4c87ba40cffb07e1ee92.jpg
+">
+    <img src="https://www.thespruceeats.com/thmb/uY4K5GmJDTdV1-TigEuuiV5IZlQ=/2667x2000/smart/filters:no_upscale()/scrambled-eggs-with-bacon-482587-Hero_01-05be09870a6a4c87ba40cffb07e1ee92.jpg
+" width="600" height="400">
+  </a>
+  <div class="desc">Egg&Bacon</div>
+
+</div>
+
+     
+   </div>
+
+
+    
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+  <script> 
+      function myFunction()
+      {
+        document.getElementById("demo").innerHTML = "Thank you for your feedback!"; 
+      }
+
+
+
+
+     
+
+
+  </script>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title></title>
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="icon" type="image/x-icon" href="https://previews.123rf.com/images/fokaspokas/fokaspokas1803/fokaspokas180300007/96756525-cup-of-hot-coffee-icon-on-transparent-background-.jpg">
+   <style>
+
+      #Sofia {
+          font-family: "Sofia", sans-serif;
+          font-size: 70px;
+         text-shadow: 3px 3px 3px #ababab;
+         }
+         .Sofia {
+          font-family: "Sofia", sans-serif;
+          font-size: 70px;
+         text-shadow: 3px 3px 3px #ababab;
+         }
+
+
+      *{
+
+         margin: 0;
+      }
+
+       body{
+          -webkit-animation:slide-down .6s ease-out;
+          -moz-animation:slide-down .6s ease-out;
+          -webkit-animation:slide-down .6s ease-in;
+          -moz-animation:slide-down .6s ease-in;
+      }
+
+
+      @-webkit-keyframes slide-down
+      {
+
+        0% {opacity: 0;}
+        20% { opacity:1; }
+
+      }
+
+
+
+      .wrapper {
+
+
+         background-color: lemonchiffon;
+         width: 100%;
+         height: 1000px;
+      }
+
+
+      ul {
+         list-style-type: none;
+          margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+             position: sticky;
+
+             
+         }
+
+      li {
+        float: left;
+        width:25%;
+      }
+   
+      li a, .dropbtn {
+         display: inline-block;
+         color: white;
+         text-align: center;
+          padding: 25px 50%;
+          text-decoration: none;
+          font-size: 20px;
+
+         }
+
+
+      li a:hover, .dropdown:hover .dropbtn {
+      background-color: #111;
+         }  
+
+      
+
+      li.dropdown {
+           display: inline-block;
+         }
+
+         .dropdowncontentHome {
+             display: none;
+             position: fixed;
+             background-color: white;
+             min-width: 25%;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          
+            }
+
+
+          .dropdowncontentHome a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+             z-index: 1;
+            text-align: center ;
+            }
+
+            .dropdowncontentNews {
+             display: none;
+             position: fixed;
+             background-color: white;
+             min-width: 25%;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          
+            }
+
+
+          .dropdowncontentNews a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+             z-index: 1;
+            text-align: center ;
+            }
+
+             .dropdowncontentContact {
+             display: none;
+             position: fixed;
+             background-color: white;
+             min-width: 25%;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          
+            }
+
+
+          .dropdowncontentContact a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+             z-index: 1;
+            text-align: center ;
+            }
+
+            .dropdowncontentFeedback {
+             display: none;
+             position: fixed;
+             background-color: white;
+             min-width: 25%;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          
+            }
+
+
+          .dropdowncontentFeedback a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+             z-index: 1;
+            text-align: center ;
+            }
+
+         .dropdowncontentHome a:hover {background-color: lightgray;}
+         .dropdowncontentFeedback a:hover {background-color: lightgray;}
+         .dropdowncontentNews a:hover {background-color: lightgray;}
+         .dropdowncontentContact a:hover {background-color: lightgray;}
+
+
+         .dropdown:hover .dropdowncontentHome {
+          display: block;
+            }
+         .dropdown:hover .dropdowncontentFeedback {
+          display: block;
+            }
+
+         .dropdown:hover .dropdowncontentNews {
+          display: block;
+            }
+
+         .dropdown:hover .dropdowncontentContact {
+          display: block;
+            }
+
+
+          #input {
+
+            width:650px;
+            height:40px;
+            font-size:25px;
+         
+
+
+          }
+
+           #input1 {
+
+            width:650px;
+            height:40px;
+            font-size:25px;
+         
+
+
+          }
+
+
+          #date{
+
+             width:650px;
+            height:40px;
+           
+            font-size:25px;
+          }
+
+
+          #select{
+
+            width:650px;
+            font-size:25px;
+            height:40px;
+            
+
+          }
+
+          #text{
+            width:50%; 
+            font-size:25px;
+            height: 100px; 
+            margin-top:20px;
+            padding-top: 0px;
+          
+          }
+
+
+         
+
+          .button, .button1 {
+           transition-duration: 0.2s;
+            }
+
+
+
+          .button, .button1 {
+           display: inline-block;
+           padding: 15px 25px;
+           font-size: 24px;
+           cursor: pointer;
+           text-align: center;
+           text-decoration: none;
+             outline: none;
+            color: #fff;
+            background-color: coral;
+             border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+}
+
+          .button, .button1 :hover {
+              background-color: #cc5200;
+          }
+
+          .button, .button1:active {
+  background-color: #cc5200;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+} 
+
+
+
+   </style>
+</head>
+
+
+
+
+<body>
+
+
+   <ul>
+
+         <li class ="dropdown">
+            <a class="dropbtn"  style ="background-color: #333;"  href="index.html">Home</a>
+
+            <div class="dropdowncontentHome">
+                 <a href="#">About us</a>
+                 <a href="#">Our services</a>
+                 <a href="#">Our customers</a>
+                 <a href="#">Location</a>
+         
+          </div>
+          </li>
+
+         <li class ="dropdown">
+            <a class="dropbtn"  style ="background-color: #333;"  href="menu.html">Menu</a>
+
+            <div class="dropdowncontentNews">
+                 <a href="drinks.html">Drinks</a>
+                 <a href="food.html">Food</a> 
+                
+
+         
+          </div>
+          </li>
+
+         <li class ="dropdown">
+            <a class="dropbtn"  style ="background-color: #333;"  href="contact.html">Contact</a>
+
+            <div class="dropdowncontentContact">
+                 <a href="#">Social media</a>
+                 <a href="#">Hotline</a>
+                 <a href="#">Email</a>
+                 <a href="#">Fax</a>
+         
+          </div>
+          </li>
+
+
+         <li class ="dropdown">
+            <a class="dropbtn"  style ="background-color: #333;"  href="feedback.html">Feedback</a>
+
+         
+          </li>
+
+
+
+   <div id ="#menu" class ="wrapper">
+<Br> 
+<br> <Br> 
+<br>  
+
+      <h1 id ="Sofia" style ="text-align: center;"> Feedback </h1>
+     
+      <br>
+      <br>
+
+
+      <p style ="margin-left:250px; font-size:50px; text-shadow: none;" id ="Sofia"> Name 
+
+
+        <input style ="margin-left: 80px" type ="text" name ="input"  id = "input" placeholder ="Please enter your name"> 
+
+      </p>  
+
+
+      <p style ="margin-left:250px; font-size:50px; text-shadow: none;" id ="Sofia"> Date
+
+
+
+        <input style ="margin-left: 115px"  type ="Date" id = "date" placeholder ="Please enter your date of feedback"> 
+
+
+
+      </p>  
+
+
+      <p style ="margin-left:250px; font-size:50px; text-shadow: none;" id ="Sofia"> Branch
+
+          <select style ="margin-left:57px" id ="select" placeholder ="Please select your city"> 
+            
+             <option> Arizona </option>
+            <option> New York </option>
+            <option> Texas </option>
+            <option> Chicago </option>
+            <option> Las Vegas </option>
+            <option> Others </option>
+
+          </select>
+       </p> 
+
+
+      <p style ="margin-left:250px ; justify-content: center; font-size:50px; text-shadow: none;" id ="Sofia"> Feedback
+
+
+
+
+
+       <input style ="margin-left: 20px" type ="text" name ="input1"  id = "input1" placeholder ="Please type your Feedback here" > </input > 
+
+
+     </p> 
+
+
+     <br>
+     <br> 
+     <br>
+
+
+
+     <button onclick ="myFunction()" id ="button1" class ="button1" style = "margin-left: 600px;">   Send  </button> 
+     <button type ="submit" class ="button1" onclick ="myReset()" id ="button1" style = "margin-left: 100px;">  Reset </button>
+<script> 
+
+   const button1 = document.getElementById('button1');
+
+      button1.addEventListener('click', function handleClick(event) {
+
+          event.preventDefault();
+
+          const firstNameInput = document.getElementById('input');  
+
+          console.log(firstNameInput.value);
+
+
+          firstNameInput.value ='';
+
+
+      });
+
+
+      button1.addEventListener('click', function handleClick(event) {
+
+          event.preventDefault();
+
+          const firstNameInput = document.getElementById('input1');  
+
+          console.log(firstNameInput.value);
+
+
+          firstNameInput.value ='';
+
+
+      });
+
+       button1.addEventListener('click', function handleClick(event) {
+
+          event.preventDefault();
+
+          const firstNameInput = document.getElementById('date');  
+
+          console.log(firstNameInput.value);
+
+
+          firstNameInput.value ='';
+
+
+      });
+</script>
+
+
+<br>
+<br> 
+<br> 
+  <p class ="Sofia" id ="demo" style ="font-size: 40px; font-style :italic; color:black; text-align: center"> </p>
+
+
+
+
+ </div>
+    
+
+</body>
+
+
+
+</html>
